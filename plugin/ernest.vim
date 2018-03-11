@@ -52,6 +52,7 @@ function! s:stop()
     endif
   endfor
   stopinsert
+  doautocmd User ErnestLeave
 endfunction
 
 command! Ernest call <SID>start()
