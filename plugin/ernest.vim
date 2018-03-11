@@ -17,20 +17,19 @@ endif
 let s:imap_save = {}
 
 function! s:start()
-  " Disable delete commands in insert mode
-  " Could use maparg to store previous mappings
   for key in g:ernest_evil_keys
+    " Store previous insert-mode map
     let s:imap_save[key] = maparg(key, 'i')
+    " Disable evil keys in insert-mode
     exe "inoremap " . key . ' <nop>'
   endfor
   echo s:imap_save
   " Set up hook to revert Ernest imaps
   augroup ernest_hook
     au!
-    " <C-o> triggers InsertLeave
-    " <C-c> can, however, sneak around InsertLeave
     au InsertLeave * call <SID>stop()
   augroup END
+  " Actually enter insert mode
   startinsert!
 endfunction
 
