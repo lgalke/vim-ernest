@@ -63,5 +63,5 @@ Thus, it did not work. Lets just give it another try...
 
 Great it works, now I am checking whtehter this config does not breka. the usual Ernest ode outside of Goyo
 
-</ernest> It works aswell ;) Happy writing!
+`</ernest>` It works aswell ;) Happy writing!
 
