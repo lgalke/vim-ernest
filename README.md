@@ -1,7 +1,8 @@
 # vim-ernest
 
 Ernest provides a modified insert mode for vim, in which all delete commands are disabled. 
-Ernest is inspired by the pure writing mode of the [Hemingway editor](http://www.hemingwayapp.com/)
+Ernest is inspired by the pure writing mode of the [Hemingway editor](http://www.hemingwayapp.com/).
+Thus, the name `Ernest` fits.
 
 ## Installation
 
@@ -115,5 +116,11 @@ augroup END
 
 This is maybe not desirable for coding, though.
 
+## Closing words
+
+Ernest provides an alternative insert mode for vim to focus on writing. Thus
+all deletion keys are disabled in Ernest mode. If you enjoy `vim-ernest`,
+please consider leaving one of your stars. Let me know whether this plugin has
+helped you to focus on actual writing rather than editing.
 
 
