@@ -51,6 +51,9 @@ autocmd! User GoyoEnter Limelight | Ernest
 autocmd! User ErnestLeave | Goyo! | Limelight!
 ```
 
+Now when entering `:Goyo<CR>`, both Limelight and Ernest are activated. When
+leaving insert mode via `<Esc>`, Goyo and Limelight will be deactivated.
+
 
 ## Limitations
 
