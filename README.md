@@ -46,7 +46,6 @@ autocmd! User ErnestLeave Goyo!
 ## Limitations
 
 - For now, previous insert mode maps are restored trivially via `inoremap`. In case you have more sophisticated insert mode mappings, feel free to help extending this plugin towards properly restoring those maps.
-- The integration with Goyo is still experimental. When you exit Ernest mode inside Goyo, Goyo will not deactivate immediately.
 
 ## Example
 
@@ -58,3 +57,11 @@ Well, that's maybe just me. HStill, you might want to give Ernest mode a try asw
 Yet another bunch of text for testing the integration of Ernest in Goyo.
 I just added an option to also call `Goyo!` when Ernest  mode is shut down.
 Lets find out if oit works >:) 
+
+Okay now that was kind of funny, I added the functionality for `ErnestLeave` only inside the github plugin directory but did not pull the changes into my local vim installation.
+Thus, it did not work. Lets just give it another try...
+
+Great it works, now I am checking whtehter this config does not breka. the usual Ernest ode outside of Goyo
+
+</ernest> It works aswell ;) Happy writing!
+
