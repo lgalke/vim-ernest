@@ -49,19 +49,26 @@ autocmd! User ErnestLeave Goyo!
 
 ## Example
 
+```
 Here is some example text, that I am just writing. I cannot delete anything and will commit it later exactly like this.
 While it is may be a bit uncofortable in the first place, zou will get used to it.
 This helps to clearly seperate editing from writing. As we all know, vim users tend to overly edit their text instead of actually produce text.
 Well, that's maybe just me. HStill, you might want to give Ernest mode a try aswell.
-
+```
+```
 Yet another bunch of text for testing the integration of Ernest in Goyo.
 I just added an option to also call `Goyo!` when Ernest  mode is shut down.
 Lets find out if oit works >:) 
+```
 
+```
 Okay now that was kind of funny, I added the functionality for `ErnestLeave` only inside the github plugin directory but did not pull the changes into my local vim installation.
 Thus, it did not work. Lets just give it another try...
+```
 
+```
 Great it works, now I am checking whtehter this config does not breka. the usual Ernest ode outside of Goyo
+```
 
 `</ernest>` It works aswell ;) Happy writing!
 
