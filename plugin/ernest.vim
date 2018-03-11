@@ -45,9 +45,9 @@ function! s:stop()
     exe "iunmap " . key
   endfor
   " Try to restore original imap
-  for [l:key, l:value] in items(s:imap_save)
-    if l:value != ''
-      exe "inoremap " . key . " ".value
+  for [key, value] in items(s:imap_save)
+    if value != ''
+      exe "inoremap " . key . " " . value
     endif
   endfor
   stopinsert
