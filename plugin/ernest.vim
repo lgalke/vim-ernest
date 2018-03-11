@@ -54,4 +54,4 @@ function! s:stop()
   doautocmd User ErnestLeave
 endfunction
 
-command! Ernest call <SID>start()
+command! -bar Ernest call <SID>start()
