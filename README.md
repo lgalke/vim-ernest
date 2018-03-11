@@ -11,10 +11,16 @@ Using [vim-plug](https://github.com/junegunn/vim-plug):
 Plug 'lgalke/vim-ernest'
 ```
 
-## Command
+## Usage
 
-Ernest provides a single new command `:Ernest`, which enters the modified insert mode (Ernest mode).
-For convenience, you can trigger Ernest mode by a mapping in your `vimrc`:
+Ernest provides a single new command:
+
+```vim
+:Ernest
+```
+
+The `:Ernest` command enters the modified insert mode (Ernest mode).
+For convenience, you can trigger Ernest mode by a mapping in your `vimrc`, e.g.:
 
 ```vim
 nnoremap A :Ernest<CR>
@@ -94,4 +100,20 @@ Great it works, now I am checking whtehter this config does not breka. the usual
 ```
 
 `</ernest>` It works aswell ;) Happy writing!
+
+## Advanced
+
+Curious of permanently replacing insert mode with Ernest mode? No problem.
+
+```vim
+augroup permanent_ernest
+  au!
+  au InsertEnter * Ernest
+  au InsertLeave * Ernest!
+augroup END
+```
+
+This is maybe not desirable for coding, though.
+
+
 

@@ -24,21 +24,17 @@ function! s:start()
     exe "inoremap " . key . ' <nop>'
   endfor
   " Set up hook to revert Ernest imaps
-  augroup ernest_hook
-    au!
-    au InsertLeave * call <SID>stop()
-  augroup END
+  augroup ernest_hook | au! | au InsertLeave * Ernest! | augroup END
   " Actually enter insert mode
   startinsert!
 endfunction
-
 
 function! s:stop()
   " Remove own InsertLeave hook
   augroup ernest_hook | au! | augroup END
   " Remove <nop> imaps
   for key in g:ernest_evil_keys
-    exe "iunmap " . key
+    silent! exe "iunmap " . key
   endfor
   " Try to restore original imap
   for [key, value] in items(s:imap_save)
@@ -46,8 +42,8 @@ function! s:stop()
       exe "inoremap " . key . " " . value
     endif
   endfor
-  stopinsert
   doautocmd User ErnestLeave
+  stopinsert
 endfunction
 
-command! -bar Ernest call <SID>start()
+command! -bar -bang Ernest if <bang>1 | call <SID>start() | else | call <SID>stop() | endif
