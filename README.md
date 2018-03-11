@@ -57,7 +57,12 @@ leaving insert mode via `<Esc>`, Goyo and Limelight will be deactivated.
 
 ## Limitations
 
-- For now, previous insert mode maps are restored trivially via `inoremap`. In case you have more sophisticated insert mode mappings, feel free to help extending this plugin towards properly restoring those maps.
+- For now, previous insert mode maps are restored trivially via `inoremap`. In
+  case you have more sophisticated insert mode mappings, feel free to help
+  extending this plugin towards properly restoring those maps.
+- Load time can be further decreased by putting the two functions into
+  `autoload` directory rather than `plugin. The plugin is so small, however,
+  that it won't hurt startuptime too much.
 
 ## Examples
 
