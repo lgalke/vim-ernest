@@ -1,7 +1,7 @@
 # vim-ernest
 
 Ernest provides a modified insert mode for vim, in which all delete commands are disabled. 
-Ernest is inspired by the `WRITE` mode of [Hemingway editor](http://www.hemingwayapp.com/)
+Ernest is inspired by the pure writing mode of the [Hemingway editor](http://www.hemingwayapp.com/)
 
 ## Installation
 
@@ -20,12 +20,14 @@ For convenience, you can trigger Ernest mode by a mapping in your `vimrc`:
 nnoremap A :Ernest<CR>
 ```
 
+**Important:** Only `<Esc>` will leave Ernest mode. There is no other way out. (If you still find one, please let me know)
+
 ## Configuration
 
 The default list of "evil keys" that Ernest will deactivate in insert mode is:
 
 ```vim
-let g:ernest_evil_keys = ['<BS>', '<C-H>', '<Del>', '<C-W>', '<C-U>', '<C-C>']
+let g:ernest_evil_keys = ['<BS>', '<C-H>', '<Del>', '<C-W>', '<C-U>', '<C-C>', '<C-O>']
 ```
 
 You can configure these keys manually in your vimrc, when desired.
@@ -38,6 +40,7 @@ To jump directly into Ernest mode after activating `:Goyo`, you can connect the 
 ```vim
 autocmd! User GoyoEnter Ernest
 ```
+
 
 ## Limitations
 
