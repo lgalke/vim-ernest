@@ -24,14 +24,19 @@ function! s:start()
     exe "inoremap " . key . ' <nop>'
   endfor
   " Set up hook to revert Ernest imaps
-  augroup ernest_hook | au! | au InsertLeave * Ernest! | augroup END
+  augroup ernest_hook
+    au! 
+    au InsertLeave * Ernest!
+  augroup END
   " Actually enter insert mode
   startinsert!
 endfunction
 
 function! s:stop()
   " Remove own InsertLeave hook
-  augroup ernest_hook | au! | augroup END
+  augroup ernest_hook 
+    au! 
+  augroup END
   " Remove <nop> imaps
   for key in g:ernest_evil_keys
     silent! exe "iunmap " . key
