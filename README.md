@@ -37,7 +37,9 @@ You can configure these keys manually in your vimrc, when desired.
 ### Goyo
 
 Ernest works great with [goyo.vim - Distraction-free writing in Vim](https://github.com/junegunn/goyo.vim).
-To jump directly into Ernest mode after activating `:Goyo`, you can connect the two plugins via
+Goyo is a plugin that enables distraction-free writing. It hides the clutter (line numbers, statusline, ...)
+and centers the text to focus on.  To jump directly into Ernest mode after
+activating `:Goyo`, you can connect the two plugins via
 
 ```vim
 autocmd! User GoyoEnter Ernest
@@ -46,9 +48,13 @@ autocmd! User ErnestLeave Goyo!
 
 ### Goyo + Limelight
 
+[Limelight](https://github.com/junegunn/limelight.vim) is a plugin that
+modifies the highlighting such that only the current paragraph is highlighted.
+You can bind all this functionality to the single `:Goyo` command via:
+
 ```vim
 autocmd! User GoyoEnter Limelight | Ernest
-autocmd! User ErnestLeave | Goyo! | Limelight!
+autocmd! User ErnestLeave Limelight! | Goyo!
 ```
 
 Now when entering `:Goyo<CR>`, both Limelight and Ernest are activated. When
