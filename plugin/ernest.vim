@@ -10,7 +10,7 @@
 " The keys to deactivate can be set in advance 
 if !exists("g:ernest_evil_keys")
   " Default list of evil keys
-  let g:ernest_evil_keys = ['<BS>', '<C-H>', '<Del>', '<C-W>', '<C-U>', '<C-C>']
+  let g:ernest_evil_keys = ['<BS>', '<C-H>', '<Del>', '<C-W>', '<C-U>', '<C-C>', '<C-O>']
 endif
 
 " Dictionary to store imap before clearing evil keys
