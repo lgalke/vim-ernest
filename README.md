@@ -20,6 +20,16 @@ For convenience, you can trigger Ernest mode by a mapping in your `vimrc`:
 nnoremap A :Ernest<CR>
 ```
 
+## Configuration
+
+The default list of "evil keys" that Ernest will deactivate in insert mode is:
+
+```vim
+let g:ernest_evil_keys = ['<BS>', '<C-H>', '<Del>', '<C-W>', '<C-U>', '<C-C>']
+```
+
+You can configure these keys manually in your vimrc, when desired.
+
 ## Integration with other plugins
 
 Ernest works great with [goyo.vim - Distraction-free writing in Vim](https://github.com/junegunn/goyo.vim).
