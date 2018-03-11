@@ -119,8 +119,10 @@ This is maybe not desirable for coding, though.
 ## Closing words
 
 Ernest provides an alternative insert mode for vim to focus on writing. Thus
-all deletion keys are disabled in Ernest mode. If you enjoy `vim-ernest`,
-please consider leaving one of your stars. Let me know whether this plugin has
-helped you to focus on actual writing rather than editing.
+all deletion keys are disabled in Ernest mode.  It integrates nicely with other
+plugins that focus on distraction-free writing, such as Goyo and Limelight.  If
+you enjoy `vim-ernest`, please consider leaving one of your stars. Let me know
+whether this plugin has helped you to focus on actual writing rather than
+editing.
 
 
