@@ -23,7 +23,6 @@ function! s:start()
     " Disable evil keys in insert-mode
     exe "inoremap " . key . ' <nop>'
   endfor
-  echo s:imap_save
   " Set up hook to revert Ernest imaps
   augroup ernest_hook
     au!
