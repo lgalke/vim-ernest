@@ -34,6 +34,8 @@ You can configure these keys manually in your vimrc, when desired.
 
 ## Integration with other plugins
 
+### Goyo
+
 Ernest works great with [goyo.vim - Distraction-free writing in Vim](https://github.com/junegunn/goyo.vim).
 To jump directly into Ernest mode after activating `:Goyo`, you can connect the two plugins via
 
@@ -42,12 +44,19 @@ autocmd! User GoyoEnter Ernest
 autocmd! User ErnestLeave Goyo!
 ```
 
+### Goyo + Limelight
+
+```vim
+autocmd! User GoyoEnter Limelight | Ernest
+autocmd! User ErnestLeave | Goyo! | Limelight!
+```
+
 
 ## Limitations
 
 - For now, previous insert mode maps are restored trivially via `inoremap`. In case you have more sophisticated insert mode mappings, feel free to help extending this plugin towards properly restoring those maps.
 
-## Example
+## Examples
 
 ```
 Here is some example text, that I am just writing. I cannot delete anything and will commit it later exactly like this.
