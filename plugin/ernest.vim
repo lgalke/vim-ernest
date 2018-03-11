@@ -36,17 +36,14 @@ endfunction
 
 function! s:stop()
   " Remove own InsertLeave hook
-  augroup ernest_hook
-    au!
-  augroup END
-  echo "Ernest hook called"
+  augroup ernest_hook | au! | augroup END
   " Remove <nop> imaps
   for key in g:ernest_evil_keys
     exe "iunmap " . key
   endfor
   " Try to restore original imap
   for [key, value] in items(s:imap_save)
-    if value != ''
+    if !empty(value)
       exe "inoremap " . key . " " . value
     endif
   endfor
