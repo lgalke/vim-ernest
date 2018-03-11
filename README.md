@@ -34,7 +34,7 @@ You can configure these keys manually in your vimrc, when desired.
 
 ## Integration with other plugins
 
-### Goyo
+### Goyo + Ernest
 
 Ernest works great with [goyo.vim - Distraction-free writing in Vim](https://github.com/junegunn/goyo.vim).
 Goyo is a plugin that enables distraction-free writing. It hides the clutter (line numbers, statusline, ...)
@@ -46,7 +46,7 @@ autocmd! User GoyoEnter Ernest
 autocmd! User ErnestLeave Goyo!
 ```
 
-### Goyo + Limelight
+### Goyo + Limelight + Ernest
 
 [Limelight](https://github.com/junegunn/limelight.vim) is a plugin that
 modifies the highlighting such that only the current paragraph is highlighted.
