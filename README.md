@@ -44,7 +44,7 @@ You can configure these keys manually in your vimrc, when desired.
 ### Goyo + Ernest
 
 Ernest works great with [goyo.vim - Distraction-free writing in Vim](https://github.com/junegunn/goyo.vim).
-Goyo is a plugin that enables distraction-free writing. It hides the clutter (line numbers, statusline, ...)
+Goyo is a plugin that provides a distraction-free writing mode for vim. It hides all the clutter (line numbers, statusline, ...)
 and centers the text to focus on.  To jump directly into Ernest mode after
 activating `:Goyo`, you can connect the two plugins via
 
@@ -74,7 +74,7 @@ leaving insert mode via `<Esc>`, Goyo and Limelight will be deactivated.
   case you have more sophisticated insert mode mappings, feel free to help
   extending this plugin towards properly restoring those maps. Proper restoring of mappings is [not so easy](https://vi.stackexchange.com/questions/7734/how-to-save-and-restore-a-mapping).
 - Load time can be further decreased by putting the two functions into
-  `autoload` directory rather than `plugin`. The plugin is so small, however,
+  `autoload` directory rather than `plugin`. The plugin is so small (31 loc), however,
   that it won't hurt startuptime too much.
 
 ## Examples
