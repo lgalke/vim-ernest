@@ -26,12 +26,12 @@ cd ~/.vim/bundle && git clone https://github.com/lgalke/vim-ernest.git
 
 Just put the `ernest.vim` file into your `vim/plugin` directory.
 
-### Native Vim8 Package Management
+### Native Vim8 Package
 
 For more information about native packages in `vim>=8`, please consult `:help packages`.
 
 ```
-mkdir -p ~/.vim/packs/lgalke/start/
+mkdir -p ~/.vim/pack/lgalke/start/
 cd !!:2
 git clone https://github.com/lgalke/vim-ernest.git
 ```
