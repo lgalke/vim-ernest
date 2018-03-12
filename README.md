@@ -28,7 +28,7 @@ Just put the `ernest.vim` file into your `vim/plugin` directory.
 
 ### Native Vim8 Package Management
 
-For more information about native packages in vim>=8, please consult `:help packages`.
+For more information about native packages in `vim>=8`, please consult `:help packages`.
 
 ```
 mkdir -p ~/.vim/packs/lgalke/start/
