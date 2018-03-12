@@ -24,7 +24,7 @@ cd ~/.vim/bundle && git clone https://github.com/lgalke/vim-ernest.git
 
 ### Traditional way
 
-Just put the `ernest.vim` file into your `vim/plugin` directory.
+Just put the `ernest.vim` file into your `.vim/plugin` directory.
 
 ### Native Vim8 Package
 
