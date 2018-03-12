@@ -6,10 +6,34 @@ Thus, the name `Ernest` fits.
 
 ## Installation
 
+
+### Plug
 Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
 Plug 'lgalke/vim-ernest'
+```
+
+### Pathogen
+
+Using [pathogen](https://github.com/tpope/vim-pathogen):
+
+```
+cd ~/.vim/bundle && git clone https://github.com/lgalke/vim-ernest.git
+```
+
+### Traditional way
+
+Just put the `ernest.vim` file into your `vim/plugin` directory.
+
+### Native Vim8 Package Management
+
+For more information about native packages in vim>=8, please consult `:help packages`.
+
+```
+mkdir -p ~/.vim/packs/lgalke/start/
+cd !!:2
+git clone https://github.com/lgalke/vim-ernest.git
 ```
 
 ## Usage
